@@ -6,7 +6,7 @@ This website was made for the fourth independent project at Epicodus.  The goal 
 
 Below is a sample of inputs and outputs the website can handle.
 
-* Order a small choose pizza
+* Order a small cheese pizza
 * Pizza will cost $6
 * Order a large, 4 topping pizza
 * Pizza will cost $14
