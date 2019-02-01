@@ -6,18 +6,19 @@ function Pizza(size, toppings) {
 }
 
 Pizza.prototype.priceCalculate = function(price, toppings) {
-  var price = 7;
+  var price = 0;
+  if (this.size !== 1 && this.size !== 2 && this.size !== 3) {
+    alert("YOU HAVE TO PICK A SIZE! Refresh and try again");
+    return price = 0;
+  }
   if (this.size === 1) {
-    price -= 1;
+    price += 6;
   }
   if (this.size === 2) {
-    price += 1;
+    price += 8;
   }
   if (this.size === 3) {
-    price += 3;
-  }
-  else if (this.size !== 1 && this.size !== 2 && this.size !== 3) {
-    alert("YOU HAVE TO PICK A SIZE!");
+    price += 10;
   }
   for (var i=0; i < this.toppings.length; i++) {
     price += 1;
