@@ -12,20 +12,21 @@
     <div class="container">
       <h1>Sam's Pizza Shop</h1>
       <h3>Select Size and Topping</h3>
+      <h6>Pizzas come standard with Cheese and Sauce</h6>
       <form id="pizzaMenu">
         <h5>Size</h5>
-          <label for="small">Small</label>
           <input type="radio" name="size" id="small" value="1">
+          <label for="small">Small ($6)</label>
 
-          <label for="medium">Medium</label>
           <input type="radio" name="size" id="medium" value="2">
+          <label for="medium">Medium ($8)</label>
 
-          <label for="large">Large</label>
           <input type="radio" name="size" id="large" value="3">
+          <label for="large">Large ($10)</label>
           <br>
           <br>
 
-          <h5>Toppings</h5>
+          <h5>Extra Toppings</h5>
           <input type="checkbox" name="topping" id="topping1" value="1">
           <label for="topping1">Extra Cheese</label><br/>
 
@@ -40,7 +41,8 @@
         <button type="submit" class="btn btn-info btn-sm">Show Price</button>
       </form>
     </div>
-
+    <div id="showPrice">
+    </div>
 
 
 
