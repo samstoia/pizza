@@ -40,6 +40,10 @@ $(document).ready(function() {
     })
     var newPizza = new Pizza(userSize, userToppings);
     var pizzaPrice = newPizza.priceCalculate()
-    $("#showPrice").show().append("Your Pizza Will Cost $" + pizzaPrice)
-    });
+    $("#showPrice").show().html("Your Pizza Will Cost $" + pizzaPrice + "<br><a href=index.html>Order a new Pizza</a>")
+    $('input[type="radio"]').prop('checked', false);
+    $('input[type="checkbox"]').prop('checked', false);
+    $("#pizzaMenu").find(':submit').attr( 'disabled','disabled' );
   });
+
+});
