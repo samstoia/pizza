@@ -1,3 +1,11 @@
 .container {
-  margin-left: 10px;
+  float: left
 }
+
+ #showPrice {
+   display: none;
+   margin-top: 20px;
+   border-style: solid;
+   border-color: blue;
+   padding: 10px;
+ }

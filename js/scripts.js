@@ -17,16 +17,14 @@ Pizza.prototype.priceCalculate = function(price, toppings) {
     price += 3;
   }
   else if (this.size !== 1 && this.size !== 2 && this.size !== 3) {
-    alert("YOU HAVE TO PICK A SIZE!")
+    alert("YOU HAVE TO PICK A SIZE!");
   }
   for (var i=0; i < this.toppings.length; i++) {
     price += 1;
   }
   this.price = price;
-  return price
+  return price;
 }
-
-
 
 // Front End(User)
 var userToppings = [];
@@ -42,5 +40,6 @@ $(document).ready(function() {
     })
     var newPizza = new Pizza(userSize, userToppings);
     var pizzaPrice = newPizza.priceCalculate()
+    $("#showPrice").show().append("Your Pizza Will Cost $" + pizzaPrice)
     });
   });
